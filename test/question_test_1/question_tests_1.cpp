@@ -6,7 +6,8 @@ TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
 
-TEST_CASE("test")
-{
-	REQUIRE(test_config() == true);
+TEST_CASE("Test get_fahrenheit function", "temperature_conversion") {
+	REQUIRE(get_fahrenheit(37) == Approx(98.6));
+	REQUIRE(get_fahrenheit(25) == Approx(77.0));
+	REQUIRE(get_fahrenheit(0) == Approx(32.0));
 }
