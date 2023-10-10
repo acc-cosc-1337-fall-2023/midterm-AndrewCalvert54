@@ -1,6 +1,7 @@
 #include "question2.h"
 
-bool test_config()
-{
-    return true;
+int modifyValues(int valueParam, int& refParam) {
+    valueParam *= 2;
+    refParam *= 3;
+    return valueParam + refParam;
 }

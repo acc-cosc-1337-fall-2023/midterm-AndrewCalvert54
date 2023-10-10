@@ -1,1 +1,1 @@
-bool test_config();
+int modifyValues(int valueParam, int& refParam);

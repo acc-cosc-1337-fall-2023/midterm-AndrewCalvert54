@@ -6,7 +6,9 @@ TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
 
-TEST_CASE("test")
-{
-	REQUIRE(test_config() == true);
+TEST_CASE("Test modifyValues function", "modify_values") {
+    int value = 3;
+    int ref = 4;
+    REQUIRE(modifyValues(value, ref) == 18);
+    REQUIRE(ref == 12);
 }
